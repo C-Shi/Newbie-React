@@ -12,7 +12,7 @@ export default function Navigation(props) {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand logo" href="#">Advanced React environment {process.env.REACT_APP_ENV}</a>
+            <a className="navbar-brand logo" href="#">Advanced React {process.env.REACT_APP_ENV} for October 17, 2022</a>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
