@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom';
 
 export default function Navigation(props) {
@@ -12,16 +11,13 @@ export default function Navigation(props) {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand logo" href="#">Advanced React {process.env.REACT_APP_ENV} for October 17, 2022</a>
+            <h3 className="navbar-brand logo" href="#">Advanced React for {process.env.REACT_APP_COHORT}</h3>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/connect">Connect</Link></li>
-              {/* <li><a className={props.mode === 'Home' ? 'selected' : ''} onClick={() => props.navigate('Home')}>Home</a></li>
-              <li><a className={props.mode === 'About' ? 'selected' : ''} onClick={() => props.navigate('About')}>About</a></li>
-              <li><a className={props.mode === 'Connect' ? 'selected' : ''} onClick={() => props.navigate('Connect')}>Connect</a></li> */}
             </ul>
           </div>
         </div>
