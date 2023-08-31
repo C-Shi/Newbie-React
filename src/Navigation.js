@@ -11,7 +11,7 @@ export default function Navigation(props) {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <h3 className="navbar-brand logo" href="#">Advanced React for {process.env.REACT_APP_COHORT}</h3>
+            <h3 className="navbar-brand logo" href="#">Advanced React App for {process.env.REACT_APP_COHORT}</h3>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
