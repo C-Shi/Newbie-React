@@ -13,12 +13,17 @@ jobs:
   deploy:
     docker:
       - image: node:18.16.1-bullseye
+    artifact:
     steps:
       - checkout
+      - run: npm install
       - run: npm run build
       - run: npm netlify:deploy
 workflows:
   newbie-react-workflow:
     jobs:
       - test
+        name: newbie-test
       - deploy
+        name: newbie-deploy
+        requires: [newbie-test]
