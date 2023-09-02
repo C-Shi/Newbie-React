@@ -17,7 +17,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run build
-      - run: npm netlify:deploy
+      - run: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=./build
 workflows:
   newbie-react-workflow:
     jobs:
