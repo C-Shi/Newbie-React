@@ -22,8 +22,7 @@ jobs:
 workflows:
   newbie-react-workflow:
     jobs:
-      - test:
-        name: newbie-test
+      - test
       - deploy:
-        name: newbie-deploy
-        requires: [newbie-test]
+        requires:
+          - test
