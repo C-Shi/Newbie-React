@@ -15,9 +15,9 @@ export default function Navigation(props) {
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/connect">Connect</Link></li>
+              <li data-testid="home-icon"><Link to="/">Home</Link></li>
+              <li data-testid="about-icon"><Link to="/about">About</Link></li>
+              <li data-testid="connect-icon"><Link to="/connect">Connect</Link></li>
             </ul>
           </div>
         </div>
