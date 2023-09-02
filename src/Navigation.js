@@ -11,7 +11,7 @@ export default function Navigation(props) {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <h3 className="navbar-brand logo" href="#">Newbie Web App</h3>
+            <h3 className="navbar-brand logo" href="#">Newbie Web App Deploy</h3>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
