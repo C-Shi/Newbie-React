@@ -13,7 +13,6 @@ jobs:
   deploy:
     docker:
       - image: node:18.16.1-bullseye
-    artifact:
     steps:
       - checkout
       - run: npm install
